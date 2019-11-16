@@ -503,6 +503,7 @@ h1 {
   display: flex;
   flex-flow: column wrap;
   font-size: 50px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -510,6 +511,8 @@ h1 {
   h1 {
     font-size: 80px;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -520,7 +523,7 @@ span.h {
   font-weight: 700;
 }
 span.r {
-  flex: 0 auto;
+  flex: 1 auto;
   font-family: "bello-pro", serif;
   color: #d9d336;
   font-weight: normal;
@@ -530,6 +533,14 @@ span.u {
   color: #fff;
   font-family: "quatro-slab", serif;
   font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  span.h,
+  span.r,
+  span.u {
+    flex: 0 auto;
+  }
 }
 
 h2 {
@@ -573,7 +584,7 @@ header {
 section {
   margin: 0 auto;
   max-width: 900px;
-  padding: 0 20px;
+  padding: 40px 20px;
 }
 
 footer {

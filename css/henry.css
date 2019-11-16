@@ -500,29 +500,36 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 50px;
   margin-bottom: 10px;
 }
+
 @media (min-width: 800px) {
   h1 {
-    font-size: 40px;
+    font-size: 80px;
+    flex-flow: row wrap;
   }
 }
-h1#site-title {
-  font-size: 60px;
+
+span.h {
+  flex: 1 auto;
   color: #fff;
   font-family: "quatro-slab", serif;
   font-weight: 700;
 }
-h1#site-title span {
+span.r {
+  flex: 0 auto;
   font-family: "bello-pro", serif;
   color: #d9d336;
   font-weight: normal;
 }
-@media (min-width: 800px) {
-  h1#site-title {
-    font-size: 80px;
-  }
+span.u {
+  flex: 1 auto;
+  color: #fff;
+  font-family: "quatro-slab", serif;
+  font-weight: 700;
 }
 
 h2 {
